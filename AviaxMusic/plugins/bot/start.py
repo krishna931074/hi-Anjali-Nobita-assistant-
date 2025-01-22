@@ -2,13 +2,16 @@ import time
 
 from pyrogram import filters
 from pyrogram.enums import ChatType
+from pyrogram.types import *
+
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 from youtubesearchpython.__future__ import VideosSearch
+import asyncio
 
 import config
 from AviaxMusic import app
 from AviaxMusic.misc import _boot_
-from AviaxMusic.plugins.sudo.sudoers import sudoers_list
+from AviaXmusic.plugins.sudo.sudoers import sudoers_list
 from AviaxMusic.utils.database import (
     add_served_chat,
     add_served_user,
@@ -87,12 +90,54 @@ async def start_pm(client, message: Message, _):
     else:
         out = private_panel(_)
         UP, CPU, RAM, DISK = await bot_sys_stats()
-        await message.reply_photo(
-            photo=config.START_IMG_URL,
-            caption=_["start_2"].format(message.from_user.mention, app.mention, UP, DISK, CPU, RAM),
+        loll = await message.reply_sticker(
+            "CAACAgUAAyEFAASNZqMKAAJHS2eRgK155TdgfwFcb_lVtj3DoF8vAALzEgACd0AgV84y5WoOtFCEHgQ"
+        )
+        await asyncio.sleep(2)
+
+        await loll.delete()
+        lol = await message.reply_text("ꜱ")
+        await asyncio.sleep(0.1)
+        await lol.edit_text("ꜱᴛ")
+        await asyncio.sleep(0.1)
+        await lol.edit_text("ꜱᴛᴀ")
+        await asyncio.sleep(0.1)
+        await lol.edit_text("ꜱᴛᴀʀ")
+        await asyncio.sleep(0.1)
+        await lol.edit_text("ꜱᴛᴀʀᴛ")
+        await asyncio.sleep(0.1)
+        await lol.edit_text("ꜱᴛᴀʀᴛɪ")
+        await asyncio.sleep(0.2)
+        await lol.edit_text("ꜱᴛᴀʀᴛɪɴ")
+        await asyncio.sleep(0.1)
+        await lol.edit_text("ꜱᴛᴀʀᴛɪɴɢ")
+        await asyncio.sleep(0.1)
+        await lol.edit_text("ꜱᴛᴀʀᴛɪɴɢ.")
+        await asyncio.sleep(0.1)
+        await lol.edit_text("ꜱᴛᴀʀᴛɪɴɢ..")
+        await asyncio.sleep(0.1)
+        await lol.edit_text("ꜱᴛᴀʀᴛɪɴɢ...")
+        await asyncio.sleep(0.2)
+        await lol.edit_text("ꜱᴛᴀʀᴛɪɴɢ.")
+        await asyncio.sleep(0.1)
+        await lol.edit_text("ꜱᴛᴀʀᴛɪɴɢ..")
+        await asyncio.sleep(0.1)
+        await lol.edit_text("ꜱᴛᴀʀᴛɪɴɢ...")
+        await asyncio.sleep(0.2)
+        await lol.edit_text("ꜱᴛᴀʀᴛɪɴɢ.")
+        await asyncio.sleep(0.1)
+        await lol.edit_text("ꜱᴛᴀʀᴛɪɴɢ..")
+        await asyncio.sleep(0.1)
+        await lol.edit_text("ꜱᴛᴀʀᴛɪɴɢ...")
+        await asyncio.sleep(0.1)
+        await lol.delete()
+
+    await message.reply_photo(
+        photo=config.START_IMG_URL,
+        caption=_["start_2"].format(message.from_user.mention, app.mention, ),
             reply_markup=InlineKeyboardMarkup(out),
         )
-        if await is_on_off(2):
+    if await is_on_off(2):
             return await app.send_message(
                 chat_id=config.LOG_GROUP_ID,
                 text=f"{message.from_user.mention} ᴊᴜsᴛ sᴛᴀʀᴛᴇᴅ ᴛʜᴇ ʙᴏᴛ.\n\n<b>ᴜsᴇʀ ɪᴅ :</b> <code>{message.from_user.id}</code>\n<b>ᴜsᴇʀɴᴀᴍᴇ :</b> @{message.from_user.username}",
