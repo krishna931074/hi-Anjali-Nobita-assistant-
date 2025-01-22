@@ -3,14 +3,14 @@ from AviaxMusic.core.dir import dirr
 from AviaxMusic.core.git import git
 from AviaxMusic.core.userbot import Userbot
 from AviaxMusic.misc import dbb, heroku
-
+from AviaxMusic.misc import sudo
 from .logging import LOGGER
 
 dirr()
 git()
 dbb()
 heroku()
-
+sudo()
 app = Aviax()
 userbot = Userbot()
 
