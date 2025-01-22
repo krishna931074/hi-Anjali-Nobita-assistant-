@@ -11,7 +11,7 @@ import asyncio
 import config
 from AviaxMusic import app
 from AviaxMusic.misc import _boot_
-from AviaXmusic.plugins.sudo.sudoers import sudoers_list
+from AviaxMusic.plugins.sudo.sudoers import sudoers_list
 from AviaxMusic.utils.database import (
     add_served_chat,
     add_served_user,
