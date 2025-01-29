@@ -1,7 +1,7 @@
 from pyrogram import Client
 
 import config 
-OWNER_ID = -1002372313866
+OWNER_ID = 7666460878
 from ..logging import LOGGER
 
 assistants = []
