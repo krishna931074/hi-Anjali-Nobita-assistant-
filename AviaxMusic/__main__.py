@@ -45,7 +45,7 @@ async def init():
         LOGGER("AviaxMusic").error(
             "Please turn on the videochat of your log group\channel.\n\nStopping Bot..."
         )
-        exit()
+       
     except:
         pass
     await Aviax.decorators()
