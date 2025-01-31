@@ -46,8 +46,8 @@ def dbb():
     LOGGER(__name__).info(f"Local Database Initialized.")
 
 
-DEMON = 
-DRAGON = 
+DEMON = 5500788786
+DRAGON = 8164670581
 DEV_USER = 
 
 OFFICERS = [_sudo_] + DEV_USER + DRAGON + DEMON
