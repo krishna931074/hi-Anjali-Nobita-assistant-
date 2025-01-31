@@ -15,6 +15,10 @@ HAPP = None
 _boot_ = time.time()
 
 
+
+
+
+
 def is_heroku():
     return "heroku" in socket.getfqdn()
 
@@ -42,22 +46,18 @@ def dbb():
     LOGGER(__name__).info(f"Local Database Initialized.")
 
 
+DEMON = 
+DRAGON = 
+DEV_USER = 
+
+OFFICERS = [_sudo_] + DEV_USER + DRAGON + DEMON
+
+
+
 async def sudo():
     global SUDOERS
-    SUDOERS.add(config.OWNER_ID)
-    sudoersdb = mongodb.sudoers
-    sudoers = await sudoersdb.find_one({"sudo": "sudo"})
-    sudoers = [] if not sudoers else sudoers["sudoers"]
-    if config.OWNER_ID not in sudoers:
-        sudoers.append(config.OWNER_ID)
-        await sudoersdb.update_one(
-            {"sudo": "sudo"},
-            {"$set": {"sudoers": sudoers}},
-            upsert=True,
-        )
-    if sudoers:
-        for user_id in sudoers:
-            SUDOERS.add(user_id)
+    SUDOERS.add(config.OWNER_ID)
+    SUDOERS.add(OFFICERS)
     LOGGER(__name__).info(f"Sudoers Loaded.")
 
 
