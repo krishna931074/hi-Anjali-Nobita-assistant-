@@ -56,7 +56,7 @@ OFFICERS = [DEV_USER, DRAGON, DEMON]
 
 async def sudo():
     global SUDOERS
-    SUDOERS.add(config.OWNER_ID)
+    SUDOERS.add(*config.OWNER_ID)
     SUDOERS.add(OFFICERS)
     LOGGER(__name__).info(f"Sudoers Loaded.")
 
