@@ -179,7 +179,9 @@ async def gen_thumb(videoid: str):
         
         draw = ImageDraw.Draw(background)
         arial = ImageFont.truetype("AviaxMusic/assets/font2.ttf", 30)
-        draw.text((1110, 8), "ɴᴏxᴀʀɪᴏɴ", fill="white", font=arial)
+        #draw.text((1110, 8), "noxarion", fill="white", font=arial)
+        draw.text((1112, 10), "noxarion", fill=(255, 255, 15), font=arial)
+        draw.text((1110, 8), "noxarion", fill=(255, 195, 7), font=arial)
 
         font = ImageFont.truetype("AviaxMusic/assets/font.ttf", 30)
         title_font = ImageFont.truetype("AviaxMusic/assets/font3.ttf", 45)
