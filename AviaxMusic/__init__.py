@@ -9,8 +9,7 @@ from .logging import LOGGER
 dirr()
 git()
 dbb()
-heroku()
-sudo()
+heroku()
 app = Aviax()
 userbot = Userbot()
 
