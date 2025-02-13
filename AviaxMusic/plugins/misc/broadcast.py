@@ -146,10 +146,6 @@ async def braodcast_message(client, message, _):
     IS_BROADCASTING = False
 
 
-
-
-
-
 async def auto_clean():
     while not await asyncio.sleep(10):
         try:
