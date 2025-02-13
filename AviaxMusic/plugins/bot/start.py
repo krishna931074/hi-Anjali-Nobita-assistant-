@@ -91,11 +91,12 @@ async def start_pm(client, message: Message, _):
         out = private_panel(_)
         UP, CPU, RAM, DISK = await bot_sys_stats()
         loll = await message.reply_sticker(
-            "CAACAgUAAyEFAASNZqMKAAJHS2eRgK155TdgfwFcb_lVtj3DoF8vAALzEgACd0AgV84y5WoOtFCEHgQ"
+            "CAACAgUAAyEFAASNZqMKAAJohWeuWdOngMpiNjhi0RnrmiQgcOUpAALyEwACXoGJV62v7lDHKyZTHgQ
         )
-        await asyncio.sleep(2)
+        await asyncio.sleep(0.2)
+        await loll.edit_sticker("CAACAgUAAyEFAASNZqMKAAJohmeuWdXLBC8nuMLkadxHXhntuM06AAIUEQACvSWJVwyKvVyIs1a1HgQ")
 
-        await loll.delete()
+        
         lol = await message.reply_text("ꜱ")
         await asyncio.sleep(0.1)
         await lol.edit_text("ꜱᴛ")
@@ -130,6 +131,7 @@ async def start_pm(client, message: Message, _):
         await asyncio.sleep(0.1)
         await lol.edit_text("ꜱᴛᴀʀᴛɪɴɢ...")
         await asyncio.sleep(0.1)
+        await loll.delete()
         await lol.delete()
 
     await message.reply_photo(
