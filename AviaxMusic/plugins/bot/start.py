@@ -94,7 +94,8 @@ async def start_pm(client, message: Message, _):
             "CAACAgUAAyEFAASNZqMKAAJohWeuWdOngMpiNjhi0RnrmiQgcOUpAALyEwACXoGJV62v7lDHKyZTHgQ"
         )
         await asyncio.sleep(0.2)
-        await loll.edit_sticker("CAACAgUAAyEFAASNZqMKAAJohmeuWdXLBC8nuMLkadxHXhntuM06AAIUEQACvSWJVwyKvVyIs1a1HgQ")
+        await loll.delete()
+        ll await message.reply_sticker("CAACAgUAAyEFAASNZqMKAAJohmeuWdXLBC8nuMLkadxHXhntuM06AAIUEQACvSWJVwyKvVyIs1a1HgQ")
 
         
         lol = await message.reply_text("ꜱ")
@@ -131,8 +132,8 @@ async def start_pm(client, message: Message, _):
         await asyncio.sleep(0.1)
         await lol.edit_text("ꜱᴛᴀʀᴛɪɴɢ...")
         await asyncio.sleep(0.1)
-        await loll.delete()
         await lol.delete()
+        await ll.delete()
 
     await message.reply_photo(
         photo=config.START_IMG_URL,
