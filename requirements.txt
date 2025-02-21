@@ -9,7 +9,7 @@ hachoir
 heroku3
 httpx[http2]==0.25.2
 motor
-#numpy
+numpy
 opencv-python
 pillow==9.5.0
 psutil
