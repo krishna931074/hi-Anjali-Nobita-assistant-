@@ -10,7 +10,7 @@ heroku3
 httpx[http2]==0.25.2
 motor
 #numpy
-opencv-python
+#opencv-python
 pillow==9.5.0
 psutil
 #py-tgcalls==0.9.7
