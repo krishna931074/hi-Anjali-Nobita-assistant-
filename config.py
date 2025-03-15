@@ -32,7 +32,7 @@ HEROKU_API_KEY = getenv("HEROKU_API_KEY")
 
 UPSTREAM_REPO = "https://github.com/anjlnobita/hi",
 )
-UPSTREAM_BRANCH = ""  # Fill this variable if your upstream repository is private
+UPSTREAM_BRANCH = "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"  # Fill this variable if your upstream repository is private
 
 SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/noxarion_network")
 SUPPORT_GROUP = getenv("SUPPORT_GROUP", "https://t.me/anime_societyy")
